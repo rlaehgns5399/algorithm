@@ -34,7 +34,7 @@ public class main {
 				arr[i] = i;
 				break;
 			case REVERSE:
-				arr[i] = length-i;
+				arr[i] = length-i-1;
 				break;
 			case RANDOM:
 				arr[i] = (int)(Math.random() * length);
@@ -52,7 +52,7 @@ public class main {
 				list.add(i);
 				break;
 			case REVERSE:
-				list.add(length-i);
+				list.add(length-i-1);
 				break;
 			case RANDOM:
 				list.add((int)(Math.random() * length));
