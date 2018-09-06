@@ -6,7 +6,7 @@ import java.util.List;
 
 public class main {
 	public enum Type{
-		NORMAL, REVERSE, RANDOM
+		NORMAL, REVERSE, RANDOM, SUPERRANDOM
 	}
 	public static void main(String[] args){
 		
@@ -24,6 +24,16 @@ public class main {
 		
 		int[] arr4 = makeArray(100, Type.RANDOM);
 		new SelectionSort(arr4);
+		
+		int[] arr5 = makeArray(20, Type.RANDOM);
+		new QuickSort(arr5);
+		
+		int[] arr6 = {0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30};
+		new CutRod(arr6, 2);	// answer : 5
+		new CutRod(arr6, 3);	// answer : 8	
+		new CutRod(arr6, 4);	// answer : 10
+		new CutRod(arr6, 7);	// answer : 18
+		new CutRod(arr6, 10);	// answer : 30
 	}
 	private static int[] makeArray(int length, main.Type type){
 		int[] arr = new int[length];
