@@ -20,7 +20,7 @@ public class MergeSort extends PrintList{
 	private List<Integer> Merge(List<Integer> left, List<Integer> right){
 		List<Integer> result = new ArrayList<Integer>();
 		while(left.size() > 0 && right.size() > 0){
-			if(left.get(0) <= right.get(0)){
+			if(left.get(0) <= right.get(0)){	// (<=) make stable
 				result.add(left.get(0));
 				left = left.subList(1, left.size());
 			} else {

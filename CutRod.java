@@ -6,7 +6,7 @@ public class CutRod extends PrintArr{
 		for(int i = 1; i <= n; i++){
 			int q = -1;
 			for(int j = 1; j <= i; j++){
-				q = Math.max(q, arr[j] + r[i-j]);
+				q = Math.max(q, arr[j] + r[i-j]);	// R_n = max(P_i + R_n-i)
 			}
 			r[i] = q;
 		}
