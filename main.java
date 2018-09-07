@@ -9,7 +9,7 @@ public class main {
 		NORMAL, REVERSE, RANDOM, SUPERRANDOM
 	}
 	public static void main(String[] args){
-		
+		/**
 		int[] arr = {1, 3, 6, 2, 3, 7, 2, 4, 6, 0, -1};
 		new InsertionSort(arr);
 		
@@ -34,6 +34,32 @@ public class main {
 		new CutRod(arr6, 4);	// answer : 10
 		new CutRod(arr6, 7);	// answer : 18
 		new CutRod(arr6, 10);	// answer : 30
+		*/
+		
+		int[] kakao_1_1_arr1 = {9, 20, 28, 18, 11};
+		int[] kakao_1_1_arr2 = {30, 1, 21, 17, 28};
+		new KaKaoCoding_1_1(5, kakao_1_1_arr1, kakao_1_1_arr2);
+		
+		new KaKaoCoding_1_2("1S2D*3T");			//	37
+		new KaKaoCoding_1_2("1D2S#10S");		//	9
+		new KaKaoCoding_1_2("1D2S0T");			//	3
+		new KaKaoCoding_1_2("1S*2T*3S");		//	23
+		new KaKaoCoding_1_2("1D#2S*3S");		//	5
+		new KaKaoCoding_1_2("1T2D3D#");			//	-4
+		new KaKaoCoding_1_2("1D2S3T*");			//	59
+		
+		String[] KaKaoCoding_1_3_City1 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
+		new KaKaoCoding_1_3(3, KaKaoCoding_1_3_City1);		// 50
+		String[] KaKaoCoding_1_3_City2 = {"Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul"};
+		new KaKaoCoding_1_3(3, KaKaoCoding_1_3_City2);		// 21
+		String[] KaKaoCoding_1_3_City3 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"};
+		new KaKaoCoding_1_3(2, KaKaoCoding_1_3_City3);		// 60
+		String[] KaKaoCoding_1_3_City4 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"};
+		new KaKaoCoding_1_3(5, KaKaoCoding_1_3_City4);		// 52
+		String[] KaKaoCoding_1_3_City5 = {"Jeju", "Pangyo", "NewYork", "newyork"};
+		new KaKaoCoding_1_3(2, KaKaoCoding_1_3_City5);		// 16
+		String[] KaKaoCoding_1_3_City6 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
+		new KaKaoCoding_1_3(0, KaKaoCoding_1_3_City6);		// 25
 	}
 	private static int[] makeArray(int length, main.Type type){
 		int[] arr = new int[length];
