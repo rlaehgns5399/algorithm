@@ -60,6 +60,14 @@ public class main {
 		new KaKaoCoding_1_3(2, KaKaoCoding_1_3_City5);		// 16
 		String[] KaKaoCoding_1_3_City6 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
 		new KaKaoCoding_1_3(0, KaKaoCoding_1_3_City6);		// 25
+		
+		String[] KaKaoCoding_1_4_timeTable1 = {"08:00", "08:01", "08:02", "08:03"};
+		new KaKaoCoding_1_4(1, 1, 5, KaKaoCoding_1_4_timeTable1);
+		
+		new KaKaoCoding_1_5("FRANCE", "french");			// 16384
+		new KaKaoCoding_1_5("handshake", "shake hands");	// 65536
+		new KaKaoCoding_1_5("aa1+aa2", "AAAA12");			// 43960
+		new KaKaoCoding_1_5("E=M*C^2", "e=m*c^2");			// 65536
 	}
 	private static int[] makeArray(int length, main.Type type){
 		int[] arr = new int[length];

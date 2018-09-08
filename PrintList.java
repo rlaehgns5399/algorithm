@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class PrintList {
-	protected void printList(List<Integer> arr){
+	protected void printList(List<?> arr){
 		System.out.print("[");
 		for(int i = 0; i < arr.size(); i++){
 			if(i != 0){
