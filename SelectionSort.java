@@ -1,5 +1,5 @@
 
-public class SelectionSort extends PrintArr{
+public class SelectionSort extends Print{
 	public SelectionSort(int[] arr){
 		super.printArr(arr);
 		int min;

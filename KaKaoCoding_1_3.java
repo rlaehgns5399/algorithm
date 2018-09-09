@@ -1,5 +1,5 @@
 
-public class KaKaoCoding_1_3 extends PrintArr{
+public class KaKaoCoding_1_3 extends Print{
 	public KaKaoCoding_1_3(int n, String[] str){
 		if(n == 0){
 			System.out.println(5 * str.length);

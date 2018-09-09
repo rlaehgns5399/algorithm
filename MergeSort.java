@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MergeSort extends PrintList{
+public class MergeSort extends Print{
 	List<Integer> list;
 	public MergeSort(List<Integer> arr){
 		super.printList(arr);

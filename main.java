@@ -6,7 +6,7 @@ import java.util.List;
 
 public class main {
 	public enum Type{
-		NORMAL, REVERSE, RANDOM, SUPERRANDOM
+		NORMAL, REVERSE, RANDOM, SUPERRANDOM, RANDOM_STABLE
 	}
 	public static void main(String[] args){
 		/**
@@ -68,6 +68,9 @@ public class main {
 		new KaKaoCoding_1_5("handshake", "shake hands");	// 65536
 		new KaKaoCoding_1_5("aa1+aa2", "AAAA12");			// 43960
 		new KaKaoCoding_1_5("E=M*C^2", "e=m*c^2");			// 65536
+		
+		List<ISElement> arr7 = makeStableList(5, Type.RANDOM_STABLE);
+		new SelectionSortStable(arr7);
 	}
 	private static int[] makeArray(int length, main.Type type){
 		int[] arr = new int[length];
@@ -100,6 +103,28 @@ public class main {
 				break;
 			case RANDOM:
 				list.add((int)(Math.random() * length));
+				break;
+			}
+		}
+		return list;
+	}
+	private static List<ISElement> makeStableList(int length, main.Type type){
+		List<ISElement> list = new ArrayList<ISElement>();
+		
+		for(int i = 0; i < length; i++){
+			switch(type){
+			case NORMAL:
+				list.add(new ISElement(i, 0));
+				break;
+			case REVERSE:
+				list.add(new ISElement(length - i - 1, 0));
+				break;
+			case RANDOM:
+				list.add(new ISElement((int)Math.random()*length, 0));
+				break;
+			case RANDOM_STABLE:
+				ISElement element = new ISElement((int)(Math.random()*length), (int)(Math.random()*length*10));
+				list.add(element);
 				break;
 			}
 		}

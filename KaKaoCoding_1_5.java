@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class KaKaoCoding_1_5 extends PrintList{
+public class KaKaoCoding_1_5 extends Print{
 	public KaKaoCoding_1_5(String str1, String str2){
 		List<String> A = new ArrayList<String>();
 		List<String> B = new ArrayList<String>();
@@ -67,7 +67,7 @@ public class KaKaoCoding_1_5 extends PrintList{
 		return result;
 	}
 	
-	// implement 2 : 해쉬맵을 사용하여 max를 이용하여 새로운 해쉬맵 생성
+	// implement 2 : �빐�돩留듭쓣 �궗�슜�븯�뿬 max瑜� �씠�슜�븯�뿬 �깉濡쒖슫 �빐�돩留� �깮�꽦
 	private List<String> U(List<String> A, List<String> B){
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		Map<String, Integer> map2 = new HashMap<String, Integer>();

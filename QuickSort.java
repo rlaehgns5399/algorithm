@@ -1,5 +1,5 @@
 
-public class QuickSort extends PrintArr{
+public class QuickSort extends Print{
 	public QuickSort(int[] arr){
 		super.printArr(arr);
 		quicksort(arr, 0, arr.length-1);

@@ -1,5 +1,5 @@
 
-public class KaKaoCoding_1_1 extends PrintArr {
+public class KaKaoCoding_1_1 extends Print {
 	public KaKaoCoding_1_1(int n, int[] arr1, int[] arr2){
 		int[] result = new int[n];
 		String[] result_arr = new String[n];

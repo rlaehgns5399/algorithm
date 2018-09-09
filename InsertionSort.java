@@ -1,5 +1,5 @@
 
-public class InsertionSort extends PrintArr{
+public class InsertionSort extends Print{
 	private int[] arr;
 	
 	public InsertionSort(int[] arr){
