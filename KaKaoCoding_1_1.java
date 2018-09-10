@@ -9,7 +9,7 @@ public class KaKaoCoding_1_1 extends Print {
 		
 		for(int i = 0; i < result.length; i++){
 			String temp = "";
-			for(int j = 1; j <= result[i]; j *= 2){
+			for(int j = 1; j < (int)Math.pow(2, n); j *= 2){
 				if((result[i] & j) > 0){
 					temp = "#" + temp;
 				} else {
