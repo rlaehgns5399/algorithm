@@ -40,6 +40,8 @@ public class main {
 		int[] kakao_1_1_arr2 = {30, 1, 21, 17, 28};
 		new KaKaoCoding_1_1(5, kakao_1_1_arr1, kakao_1_1_arr2);
 		
+		System.out.println();
+		
 		new KaKaoCoding_1_2("1S2D*3T");			//	37
 		new KaKaoCoding_1_2("1D2S#10S");		//	9
 		new KaKaoCoding_1_2("1D2S0T");			//	3
@@ -47,6 +49,8 @@ public class main {
 		new KaKaoCoding_1_2("1D#2S*3S");		//	5
 		new KaKaoCoding_1_2("1T2D3D#");			//	-4
 		new KaKaoCoding_1_2("1D2S3T*");			//	59
+		
+		System.out.println();
 		
 		String[] KaKaoCoding_1_3_City1 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
 		new KaKaoCoding_1_3(3, KaKaoCoding_1_3_City1);		// 50
@@ -61,8 +65,12 @@ public class main {
 		String[] KaKaoCoding_1_3_City6 = {"Jeju", "Pangyo", "Seoul", "NewYork", "LA"};
 		new KaKaoCoding_1_3(0, KaKaoCoding_1_3_City6);		// 25
 		
+		System.out.println();
+		
 		String[] KaKaoCoding_1_4_timeTable1 = {"08:00", "08:01", "08:02", "08:03"};
 		new KaKaoCoding_1_4(1, 1, 5, KaKaoCoding_1_4_timeTable1);
+		
+		System.out.println();
 		
 		new KaKaoCoding_1_5("FRANCE", "french");			// 16384
 		new KaKaoCoding_1_5("handshake", "shake hands");	// 65536
