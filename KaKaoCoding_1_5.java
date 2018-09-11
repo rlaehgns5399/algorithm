@@ -33,7 +33,7 @@ public class KaKaoCoding_1_5 extends Print{
 		System.out.print("A U B = ");
 		super.printList(U);
 		int j;
-		if(N.size() == 0 || U.size() == 0){
+		if(U.size() == 0){
 			j = 65536;
 		} else {
 			double temp = ((float)N.size() / (float)U.size()) * 65536;
@@ -45,22 +45,30 @@ public class KaKaoCoding_1_5 extends Print{
 	// implement 1 : 
 	private List<String> N(List<String> A, List<String> B){
 		Map<String, Integer> map = new HashMap<String, Integer>();
+		Map<String, Integer> map2 = new HashMap<String, Integer>();
 		
 		for(int i = 0; i < A.size(); i++){
-			for(int j = 0; j < B.size(); j++){
-				if(A.get(i).equals(B.get(j))){
-					if(map.get(A.get(i)) == null){
-						map.put(A.get(i), 0);
-					}
-					map.put(A.get(i), map.get(A.get(i)) + 1);
-					break;
+			if(map.get(A.get(i)) == null) map.put(A.get(i), 0);
+			map.put(A.get(i), map.get(A.get(i)) + 1);
+		}
+		for(int i = 0; i < B.size(); i++){
+			if(map2.get(B.get(i)) == null) map2.put(B.get(i), 0);
+			map2.put(B.get(i), map2.get(B.get(i)) + 1);
+		}
+
+		Map<String, Integer> resultmap = new HashMap<String, Integer>();
+		
+		for(String key : map.keySet()){
+			for(String key2 : map2.keySet()){
+				if(key.equals(key2)){
+					resultmap.put(key, Math.min(map.get(key), map2.get(key)));
 				}
 			}
 		}
 		
 		List<String> result = new ArrayList<String>();
-		for(String key : map.keySet()){
-			for(int i = 0; i < map.get(key); i++){
+		for(String key : resultmap.keySet()){
+			for(int i = 0; i < resultmap.get(key); i++){
 				result.add(key);
 			}
 		}
@@ -82,14 +90,15 @@ public class KaKaoCoding_1_5 extends Print{
 		}
 
 		Map<String, Integer> resultmap = new HashMap<String, Integer>();
+		
 		for(String key : map.keySet()){
-			for(String key2 : map2.keySet()){
-				if(key.equals(key2)){
-					resultmap.put(key, Math.max(map.get(key), map2.get(key2)));
-				} else {
-					resultmap.put(key, map.get(key));
-					resultmap.put(key2, map2.get(key2));
-				}
+			resultmap.put(key, map.get(key));
+		}
+		for(String key : map2.keySet()){
+			if(resultmap.get(key) == null){
+				resultmap.put(key, map2.get(key));
+			} else {
+				resultmap.put(key, Math.max(resultmap.get(key), map2.get(key)));
 			}
 		}
 		
