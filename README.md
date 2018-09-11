@@ -7,3 +7,4 @@
 2018.09.07: 2018 KaKaoCoding Quiz 1, 2, 3 <br>
 2018.09.08: 2018 KakaoCoding Quiz 5 <br>
 2018.09.09: Selection Sort(stable) <br>
+2018.09.10: Modify 2018 KaKaoCoding Quiz 1, 2 Error<br>
