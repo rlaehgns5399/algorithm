@@ -17,17 +17,17 @@ public class KaKaoCoding_1_7 extends Print{
 		int afterSize = -1;
 		int result = 0;
 		while(beforeSize != afterSize){
-			beforeSize = set.size();
+			beforeSize = getSize(arr);
 			for(int i = 0; i < m-1; i++){
 				for(int j = 0; j < n-1; j++){
 					try{
 						if(arr[i][j] != null){
 							String str = arr[i][j].str;
 							if(arr[i+1][j].str.equals(str) && arr[i][j+1].str.equals(str) && arr[i+1][j+1].str.equals(str)){
-								set.add(i*m+j);
-								set.add((i+1)*m+j);
-								set.add(i*m+(j+1));
-								set.add((i+1)*m+(j+1));
+								set.add((i*n)+j);
+								set.add(((i+1)*n)+j);
+								set.add((i*n)+(j+1));
+								set.add(((i+1)*n)+(j+1));
 							}
 						}
 						
@@ -40,18 +40,27 @@ public class KaKaoCoding_1_7 extends Print{
 			
 			arrDown(arr, set, m,n);
 			
-			afterSize = set.size();
+			afterSize = getSize(arr);
 			result += set.size();
 			set = new HashSet<Integer>();
 			System.out.println("block: " + result);
 			
 		}
 	}
+	private int getSize(Element[][] arr){
+		int size = 0;
+		for(int i = 0; i < arr.length; i++){
+			for(int j = 0; j < arr[i].length; j++){
+				if(arr[i][j] != null) size++;
+			}
+		}
+		return size;
+	}
 	private void arrDown(Element[][] arr, Set<Integer> set, int m, int n){
 		for(Integer index : set){
 			int i = index / n;
 			int j = index % n;
-			System.out.println(index + " " + i + " " + j) ;
+			// System.out.println(index + " " + i + " " + j) ;
 			arr[i][j] = null;
 		}
 		PrintArr(arr);
