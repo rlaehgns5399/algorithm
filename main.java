@@ -80,12 +80,12 @@ public class main {
 		List<ISElement> arr7 = makeStableList(5, Type.RANDOM_STABLE);
 		new SelectionSortStable(arr7);
 		
-		String[] KaKaoCoding_1_7_table1 = {"CCBDE", "AAADE", "AAABF", "CCBBF"};
-		String[] KaKaoCoding_1_7_table2 = {"TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"};
-		String[] KaKaoCoding_1_7_table3 = {"AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA"};
-		new KaKaoCoding_1_7(4, 5, KaKaoCoding_1_7_table1);	// 14
-		new KaKaoCoding_1_7(6, 6, KaKaoCoding_1_7_table2);	// 15
-		new KaKaoCoding_1_7(5, 15, KaKaoCoding_1_7_table3);
+		String[] KaKaoCoding_1_6_table1 = {"CCBDE", "AAADE", "AAABF", "CCBBF"};
+		String[] KaKaoCoding_1_6_table2 = {"TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"};
+		String[] KaKaoCoding_1_6_table3 = {"AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAA"};
+		new KaKaoCoding_1_6(4, 5, KaKaoCoding_1_6_table1);	// 14
+		new KaKaoCoding_1_6(6, 6, KaKaoCoding_1_6_table2);	// 15
+		new KaKaoCoding_1_6(5, 15, KaKaoCoding_1_6_table3);	// 75
 	}
 	private static int[] makeArray(int length, main.Type type){
 		int[] arr = new int[length];
