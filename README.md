@@ -10,3 +10,7 @@
 2018.09.10: Modify 2018 KaKaoCoding Quiz 1, 2 Error<br>
 2018.09.11: Modify 2018 KaKaoCoding Quiz 3 Error<br>
 2018.09.12: Modify 2018 KaKaoCoding Quiz 5 Error<br>
+2018.09.13: 2018 KaKaoCoding Quiz 7(Incomplete)<br>
+2018.09.14: 2018 KaKaoCoding QUiz 7(Complete)<br>
+2018.09.15: 2018 KaKaoCoding Quiz 7 -> 6(Read Commit for detail)<br>
+2018.09.16: 2019 KaKao Recruitment Coding Test(1,2,4(Only Acc pass),5 Solved)<br>
