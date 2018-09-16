@@ -25,7 +25,7 @@ public class KaKaoCoding_1_4 {
 				else conTime = driveTime;
 			}
 			
-			driveTime += n;
+			driveTime += t;
 			if(driveTime >= (60*24)) break;
 		}
 		
