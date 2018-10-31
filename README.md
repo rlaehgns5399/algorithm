@@ -16,3 +16,4 @@
 2018.09.16: 2019 KaKao Recruitment Coding Test(1,2,4(Only Acc pass),5 Solved)<br>
 2018.09.17: 2019 kaKao Recruitment Coding Test - update Q3 answer(it is implemented in C++)<br>
 2018.09.18: Implement Q3 in Java(but i cant understand how it works)<br>
+2018.10.31: Add a lot of Algorithm quiz<br>
