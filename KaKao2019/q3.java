@@ -11,6 +11,7 @@ public class q3 {
 		System.out.println(solution(a));
 	}
 	private static boolean possi(List<Integer> list, int now){
+		int[] a = list.stream().mapToInt(i->i).toArray();
 		for(int i = 0; i < list.size(); i++){
 			if ( (list.get(i) & now) == list.get(i)) return false;
 		}
