@@ -17,3 +17,4 @@
 2018.09.17: 2019 kaKao Recruitment Coding Test - update Q3 answer(it is implemented in C++)<br>
 2018.09.18: Implement Q3 in Java(but i cant understand how it works)<br>
 2018.10.31: Add a lot of Algorithm quiz<br>
+2018.12.07: Programmers quiz: Express with N number
