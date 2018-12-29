@@ -3,7 +3,7 @@ import java.util.Collections;
 
 /* https://programmers.co.kr/learn/courses/30/lessons/42746
  * Input: [0, 0, 0, 0]
- * Output : 0000
+ * Output : 0
  * --- Description ---
  * 초기엔 O(n^2 + 4n)로 작업하고, 숫자 하나마다 가중치를 주는 방식으로 구현
  * 가중치를 주는 조건은 각 숫자의 가장 큰 자릿수를 일단 구하고, (999)가 있다면 3
@@ -13,6 +13,7 @@ import java.util.Collections;
  * 하지만 테스트 케이스 중에 단 1도 통과를 못했음
  * https://programmers.co.kr/learn/questions/3949 를 참고하며 구현하였음..
  * 나머지 통과하신 분들의 구현한 코드를 봤는데 단순 a+b와 b+a로 비교하며 정렬하는 문제...
+ * 마지막 테스트 케이스의 경우엔, 0000일 때, 0을 반환하여야함. Exception으로 해결했지만 trap 자체가 cost가 큰 방법인데 통과는 함
  */
  
 public class 가장큰수 {
