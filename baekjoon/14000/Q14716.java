@@ -1,22 +1,28 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
 
 public class Main {
     static int col, row;
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        col = sc.nextInt();
-        row = sc.nextInt();
+        String[] main = br.readLine().split(" ");
+        col = Integer.parseInt(main[0]);
+        row = Integer.parseInt(main[1]);
 
         int[][] arr = new int[col][row];
         for(int i = 0; i < col; i++){
+            String[] line = br.readLine().split(" ");
             for(int j = 0; j < row; j++){
-                arr[i][j] = sc.nextInt();
+                arr[i][j] = Integer.parseInt(line[j]);
             }
         }
 
+        br.close();
+        
         int count = 0;
         while(true){
             int[] p = getFirstOne(arr);
